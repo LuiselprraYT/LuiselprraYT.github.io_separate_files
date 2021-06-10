@@ -1,2 +1,3 @@
 # LuiselprraYT.github.io_separate_files
-just the github page but only with the files instead of various folders
+Just the github page but only with the files instead of various folders.
+You can check the other repository [here!](https://github.com/LuiselprraYT/LuiselprraYT.github.io)
