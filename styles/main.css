@@ -1,0 +1,31 @@
+body {
+    background-color: #8391a1;
+}
+
+#body-text {
+    font-family: 'Quicksand', sans-serif;
+}
+
+#body-text a {
+    color: rgb(0, 255, 0);
+    text-decoration: none;
+}
+
+#dont-select {
+    user-select: none;
+}
+
+/* Under Construction */
+
+@font-face {
+    font-family: sans-ms;
+    src: url(https://luiselprrayt.github.io/assets/ComicSansMS3.woff2);
+}
+
+#down-under {
+    margin: auto;
+    background: rgba(255 ,69 ,0 , 0.5);
+    border-radius: 10px;
+    font-family: sans-ms;
+    text-align: center;
+}
