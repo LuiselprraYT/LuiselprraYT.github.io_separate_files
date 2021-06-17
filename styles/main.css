@@ -22,6 +22,20 @@ body {
     src: url(https://luiselprrayt.github.io/assets/ComicSansMS3.woff2);
 }
 
+#down-under h1::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+#down-under h1::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
 #down-under {
     width: fit-content;
     height: fit-content;
