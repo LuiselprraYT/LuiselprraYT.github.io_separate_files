@@ -27,7 +27,6 @@
     position: -webkit-sticky;
     position: sticky;
     position: -moz-sticky;
-    top: 0;
     width: 100%;
 }
 
