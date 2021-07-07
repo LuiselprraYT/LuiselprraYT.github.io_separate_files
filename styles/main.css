@@ -11,10 +11,6 @@ body {
     text-decoration: none;
 }
 
-#dont-select {
-    user-select: none;
-}
-
 /* Under Construction */
 
 @font-face {
