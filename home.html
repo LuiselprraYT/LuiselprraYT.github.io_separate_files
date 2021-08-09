@@ -19,10 +19,11 @@
                 background-color: gray;
                 overflow: hidden;
             }
-            a#nav-item {
+            #nav-item {
                 display: block;
                 float: left;
                 padding: 8px;
+                border-right-style: 1px black;
                 text-decoration: none;
                 color: black;
                 font-family: 'Quicksand', sans-serif;
@@ -33,17 +34,14 @@
                 color: white;
                 background-color: rgb(64, 64, 64);
             }
-            .active {
-                background-color: rgb(0, 255, 0);
-            }
-            .active:hover {
-                background-color: rgb(0, 127, 0) !important;
-            }
+            .active { background-color: rgb(0, 255, 0); }
+            .active:hover { background-color: rgb(0, 127, 0) !important; }
             #nav-item:last-child {
                 float: right;
                 border-right: none;
                 border-left: 1px black;
             }
+            p { border-right: 1px black; }
         </style>
     </head>
     <body>
@@ -62,7 +60,7 @@
             <a title="About Me" href="about.html" id="nav-item">About</a>
         </nav>
         <div id="body-text">
-
+            <p>Ello</p>
         </div>
     </body>
 </html>
