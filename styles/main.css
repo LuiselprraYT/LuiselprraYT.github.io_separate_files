@@ -33,3 +33,17 @@ body {
     font-family: sans-ms;
     text-align: center;
 }
+
+#thing {
+    font-size: 2em;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    background-color: gray;
+    padding: 0px 5px;
+    border-radius: 5px;
+}
+
+#thing:hover {
+    transform: scale(1.04);
+}

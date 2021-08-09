@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Find The Password</title>
+        <link rel="icon" href="assets/icon.png">
+        <link rel="stylesheet" href="assets/main.css">
+        <script src="assets/scripts.js"></script>
+    </head>
+    <body>
+        <label>You need a password to continue</label>
+        <input type="text" id="pwd" onfocus="fardPlay()" onkeypress="boomPlay()" onkeydown="mobBum(event)">
+        <button onclick="testPwd()">Submit</button>
+        <button onclick="hintsRed()">Hints</button>
+        <p id="secret">Psss... trying selecting anything in the page (Or just do Ctrl+A)</p>
+        <div id="space"></div>
+        <p id="white">01001110 01000100 01100111 00110010 01001110 01010100 01100011 00110101 01001110 01101010 01000101 01111001 01001101 01000100 01100011 00110000 01001110 01101010 01100111 00110010 01001111 01010100 01100011 01111010 01001101 01101010 01000001 00110010 01001111 01010100 01100011 01111010 01001101 01101010 01000001 00110011 01001110 01000100 01011001 00110100 01001110 01101010 01010101 01111001 01001101 01000100 01100011 01110111 01001110 01101010 01000101 00110011 01001101 01111010 01100011 01111010 01001110 01111010 01100011 00110010 01011010 01101010 01100011 01111001 01001110 01101010 01010001 01111001 01001101 01000100 01001010 01101011 01001101 00110010 01010101 01111001 01001101 01000100 01011001 00110100 01001110 01111010 01001001 00110010 01011001 01111010 01011010 01101010 01001110 01101101 01011001 00111101</p>
+        <audio id="fard" src="assets/fard.mp3"></audio>
+        <audio id="boom" src="assets/bom.mp3"></audio>
+        <audio id="moob" src="assets/mob.mp3"></audio>
+    </body>
+</html>

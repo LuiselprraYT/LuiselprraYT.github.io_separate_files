@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                background-color: black;
+                overflow: hidden;
+            }
+            video {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            #daRol {
+                position: absolute;
+                color: black;
+                animation-name: progaming;
+                animation-duration: 5s;
+                animation-delay: 1.5s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes progaming {
+                0% {color: white; left: -40%;}
+                100% {color: white; left: 100%;}
+            }
+        </style>
+        <link rel="icon" href="/assets/icon.png">
+        <title>WRONG</title>
+    </head>
+    <body>
+        <h1 id="daRol">rickrolled!!!1!</h1>
+        <video width="640" height="360" autoplay><source src="coolvideo.mp4" type="video/mp4"></video>
+    </body>
+</html>

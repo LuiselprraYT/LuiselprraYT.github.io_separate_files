@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+}
+
+#secret {
+    color: rgb(236, 236, 236);
+}
+
+#white {
+    cursor: default;
+    color: white;
+}
+
+#space {
+    height: 500px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                text-align: center;
+            }
+            button {
+                font-size: 2em;
+            }
+            .yeso {
+                color: white;
+                animation-name: w2b;
+                animation-duration: 1s;
+                animation-delay: 2s;
+                animation-iteration-count: infinite;
+            }
+            #yea {
+                color: white
+            }
+            @keyframes w2b {
+                0% {color: white;}
+                50% {color: black;}
+                100%{color: white;}
+            }
+        </style>
+        <script>
+            function playVid() {
+                var vid = document.getElementById('daVid');
+                vid.play();
+                if (vid.readyState === 4) {
+                    var newClass = document.getElementById('yea');
+                    newClass.classList.add('yeso');
+                };
+            }
+        </script>
+        <link rel="icon" href="/assets/icon.png">
+        <title>HINTS?!?!?!?!?!?</title>
+    </head>
+    <body>
+        <div>
+            <h1>you cant do it and now youre here so...</h1>
+            <button onclick="playVid()">Play</button>
+        </div>
+        <video id="daVid" width="640" height="360" poster="coolpng.png"><source src="coolvideo.mp4"></video>
+        <h1 id="yea">rickrolled!!!</h1>
+    </body>
+</html>
