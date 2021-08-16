@@ -51,3 +51,27 @@ body {
     transition: 0.25s;
     transform: scale(1.04);
 }
+
+/* Navigation Bar */
+
+#nav-bar {
+    background-color: gray;
+    overflow: hidden;
+}
+#nav-item {
+    display: block;
+    float: left;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    position: sticky;
+    transition: 0.25s;
+}
+#nav-item:hover {
+    color: white;
+    background-color: rgb(64, 64, 64);
+}
+.active { background-color: rgb(0, 255, 0); }
+.active:hover { background-color: rgb(0, 127, 0) !important; }
+#nav-item:last-child { float: right; }
