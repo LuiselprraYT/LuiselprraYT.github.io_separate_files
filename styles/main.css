@@ -34,6 +34,11 @@ body {
     text-align: center;
 }
 
+#randtext {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
 /* Projects */
 
 #thing {
