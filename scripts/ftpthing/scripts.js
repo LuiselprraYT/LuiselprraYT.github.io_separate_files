@@ -4,13 +4,13 @@ function testPwd() {
     if (pwd === 'hrllo') {
         alert('Nice!')
         alert('Now...')
-        window.location.href = 'assets/die.gif';
+        window.location.href = '../assets/ftpthing/die.gif';
     } else {
         alert('Wrong answer');
         alert('Now I redirect you to a another page');
         alert('Wait a moment...');
         alert('Done!');
-        window.location.href = 'assets/wrongpage.html';
+        window.location.href = 'wrongpage.html';
     };
 }
 
@@ -40,5 +40,5 @@ function boomPlay() {
 }
 
 function hintsRed() {
-    window.location.href = 'assets/hints.html';
+    window.location.href = 'hints.html';
 }
