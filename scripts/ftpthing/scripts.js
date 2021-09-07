@@ -4,7 +4,7 @@ function testPwd() {
     if (pwd === 'hrllo') {
         alert('Nice!')
         alert('Now...')
-        window.location.href = '../assets/ftpthing/die.gif';
+        window.location.href = '/assets/ftpthing/die.gif';
     } else {
         alert('Wrong answer');
         alert('Now I redirect you to a another page');
