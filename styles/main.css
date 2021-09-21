@@ -1,3 +1,5 @@
+/* General */
+
 body {
     background-color: #8391a1;
 }
@@ -7,23 +9,80 @@ body {
     background: rgb(0, 255, 0);
 }
 
-#body-text {
+.body-text {
     font-family: 'Quicksand', sans-serif;
 }
 
-#body-text a {
+.body-text a {
     color: rgb(0, 255, 0);
     text-decoration: none;
 }
 
-/* Under Construction */
+/* Scroll Bar */
+
+body::-webkit-scrollbar { width: 5px; }
+body::-webkit-scrollbar-track { background: #8391a1; }
+
+body::-webkit-scrollbar-thumb {
+    background-color: #00ff00;
+    border-radius: 40px;
+    border: 3px none #ffffff;
+}
+
+/* Navigation Bar */
+
+.nav-bar {
+    background-color: gray;
+    overflow: hidden;
+}
+
+.nav-item {
+    display: block;
+    float: left;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    position: sticky;
+    transition: 0.25s;
+}
+
+.nav-item:hover {
+    color: white;
+    background-color: rgb(64, 64, 64);
+}
+
+.active { background-color: rgb(0, 255, 0); }
+.active:hover { background-color: rgb(0, 127, 0) !important; }
+.nav-item:last-child { float: right; }
+
+/* Projects */
+
+.thing {
+    transition: 0.25s;
+    font-size: 1.5em;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    background-color: gray;
+    padding: 0px 5px;
+    border-radius: 5px;
+    color: black;
+}
+
+#thing:hover {
+    transition: 0.25s;
+    transform: scale(1.04);
+}
+
+/* Extras */
 
 @font-face {
     font-family: sans-ms;
     src: url(/assets/ComicSansMS3.woff2);
 }
 
-#down-under {
+.down-under {
     width: fit-content;
     height: fit-content;
     padding: 0px 10px;
@@ -37,60 +96,4 @@ body {
 #randtext {
     font-family: 'Quicksand', sans-serif;
     text-align: center;
-}
-
-/* Projects */
-
-#thing {
-    transition: 0.25s;
-    font-size: 1.5em;
-    text-align: center;
-    width: fit-content;
-    height: fit-content;
-    background-color: gray;
-    padding: 0px 5px;
-    border-radius: 5px;
-}
-
-#thing:hover {
-    transition: 0.25s;
-    transform: scale(1.04);
-}
-
-/* Navigation Bar */
-
-#nav-bar {
-    background-color: gray;
-    overflow: hidden;
-}
-
-#nav-item {
-    display: block;
-    float: left;
-    padding: 8px;
-    text-decoration: none;
-    color: black;
-    font-family: 'Quicksand', sans-serif;
-    position: sticky;
-    transition: 0.25s;
-}
-
-#nav-item:hover {
-    color: white;
-    background-color: rgb(64, 64, 64);
-}
-
-.active { background-color: rgb(0, 255, 0); }
-.active:hover { background-color: rgb(0, 127, 0) !important; }
-#nav-item:last-child { float: right; }
-
-/* Scroll Bar */
-
-body::-webkit-scrollbar { width: 5px; }
-body::-webkit-scrollbar-track { background: #8391a1; }
-
-body::-webkit-scrollbar-thumb {
-    background-color: #00ff00;
-    border-radius: 40px;
-    border: 3px none #ffffff;
 }
