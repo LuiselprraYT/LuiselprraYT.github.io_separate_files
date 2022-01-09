@@ -1,0 +1,57 @@
+/* General */
+
+body {
+    background-color: #8391a1;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.body-text {
+    text-align: center;
+}
+
+h1, h2 {
+    color: rgb(0, 255, 0);
+}
+
+/* Scroll Bar */
+
+body::-webkit-scrollbar { width: 5px; }
+body::-webkit-scrollbar-track { background: #8391a1; }
+
+body::-webkit-scrollbar-thumb {
+    background-color: #00ff00;
+    border-radius: 40px;
+    border: 3px none #ffffff;
+}
+
+/* Navigation Bar */
+
+.nav-bar {
+    padding: 5px 15px 0px;
+    display: flex;
+    align-items: center;
+    border: 1px black;
+}
+
+.nav-item {
+    padding: 0px 8px;
+    float: left;
+    text-decoration: none;
+    color: rgb(255, 255, 0);
+}
+
+.nav-item:hover {
+    color: rgb(127, 127, 0);
+}
+
+.nav-item:last-child { margin-left: auto; }
+
+.active {
+    text-decoration: underline rgb(0, 255, 255) 3px;
+}
+
+/* Blog Container */
+
+.blog-posts {
+    text-align: center;
+}
