@@ -11,6 +11,11 @@ body {
     text-align: center;
 }
 
+::selection {
+    color: black;
+    background: rgb(0, 255, 0);
+}
+
 h1, h2 {
     color: rgb(0, 255, 0);
 }
