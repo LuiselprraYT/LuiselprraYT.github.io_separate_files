@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the button</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1 {
+            font-size: 4em;
+            background-color: #FFFFFF;
+            color: #00FF00;
+            text-align: center;
+        }
+        button {
+            font-size: 5em;
+        }
+    </style>
+    <script>
+        function fartr() {
+            var sound =  document.getElementById('fart');
+            var fard = sound.cloneNode();
+
+            fard.play();
+        }
+        function changeToBoom() {
+            var sound = document.getElementById('fart');
+            document.getElementById('text').innerHTML = 'you selected vine boom';
+            sound.src = '../assets/thebutton/bom.mp3'
+        }
+        function changeToFart() {
+            var sound = document.getElementById('fart');
+            document.getElementById('text').innerHTML = 'you selected reverb fard';
+            sound.src = '../assets/thebutton/fard.mp3'
+        }
+    </script>
+</head>
+<body>
+    <button onclick="changeToBoom()" id="one">vine boom</button>
+    <button onclick="changeToFart()" id="two">reverb fard</button>
+    <img onclick="fartr()" src="../assets/thebutton/fartpush.png">
+    <h1 id="text">you selected reverb fard</h1>
+    <audio id="fart" src="../assets/thebutton/fard.mp3"></audio>
+</body>
+</html>

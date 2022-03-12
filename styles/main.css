@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
-
 body {
     background-color: #8391a1;
 }
@@ -62,18 +61,19 @@ body::-webkit-scrollbar-thumb {
 /* Projects */
 
 .thing {
+    display: block;
+    float: left;
     transition: 0.25s;
     font-size: 1.5em;
     text-align: center;
-    width: fit-content;
-    height: fit-content;
     background-color: gray;
     padding: 0px 5px;
+    margin: 10px ;
     border-radius: 5px;
     color: black;
 }
 
-#thing:hover {
+.thing:hover {
     transition: 0.25s;
     transform: scale(1.04);
 }
