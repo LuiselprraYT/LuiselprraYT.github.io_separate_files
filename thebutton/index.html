@@ -24,6 +24,12 @@
         }
     </style>
     <script>
+        function pushP(event) {
+            var code = event.keyCode;
+            if (code == 32) {
+                fartr();
+            }
+        }
         function fartr() {
             var sound =  document.getElementById('fart');
             var fard = sound.cloneNode();
@@ -33,16 +39,16 @@
         function changeToBoom() {
             var sound = document.getElementById('fart');
             document.getElementById('text').innerHTML = 'you selected vine boom';
-            sound.src = '../assets/thebutton/bom.mp3'
+            sound.src = '/assets/thebutton/bom.mp3'
         }
         function changeToFart() {
             var sound = document.getElementById('fart');
             document.getElementById('text').innerHTML = 'you selected reverb fard';
-            sound.src = '../assets/thebutton/fard.mp3'
+            sound.src = '/assets/thebutton/fard.mp3'
         }
     </script>
 </head>
-<body>
+<body onkeydown="pushP(event)">
     <button onclick="changeToBoom()" id="one">vine boom</button>
     <button onclick="changeToFart()" id="two">reverb fard</button>
     <img onclick="fartr()" src="../assets/thebutton/fartpush.png">
