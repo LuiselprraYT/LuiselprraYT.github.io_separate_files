@@ -46,11 +46,23 @@
             document.getElementById('text').innerHTML = 'you selected reverb fard';
             sound.src = '/assets/thebutton/fard.mp3'
         }
+        function changeToBruh() {
+            var sound = document.getElementById('fart');
+            document.getElementById('text').innerHTML = 'you selected the bruh';
+            sound.src = '/assets/thebutton/bruh.mp3'
+        }
+        function changeToBas() {
+            var sound = document.getElementById('fart');
+            document.getElementById('text').innerHTML = 'you selected bass drop';
+            sound.src = '/assets/thebutton/bas.mp3'
+        }
     </script>
 </head>
 <body onkeydown="pushP(event)">
-    <button onclick="changeToBoom()" id="one">vine boom</button>
-    <button onclick="changeToFart()" id="two">reverb fard</button>
+    <button onclick="changeToBoom()">vine boom</button>
+    <button onclick="changeToFart()">reverb fard</button>
+    <button onclick="changeToBruh()">the bruh</button>
+    <button onclick="changeToBas()">bass drop</button>
     <img onclick="fartr()" src="../assets/thebutton/fartpush.png">
     <h1 id="text">you selected reverb fard</h1>
     <audio id="fart" src="../assets/thebutton/fard.mp3"></audio>
