@@ -66,6 +66,16 @@
             document.getElementById('text').innerHTML = 'you selected taco bel';
             sound.src = '/assets/thebutton/bong.mp3'
         }
+        function changeToSus() {
+            var sound = document.getElementById('fart');
+            document.getElementById('text').innerHTML = 'you selected the sus';
+            sound.src = '/assets/thebutton/amogos.mp3'
+        }
+        function changeToAAAA() {
+            var sound = document.getElementById('fart');
+            document.getElementById('text').innerHTML = 'you selected a';
+            sound.src = '/assets/thebutton/a.mp3'
+        }
     </script>
 </head>
 <body onkeydown="pushP(event)">
@@ -75,6 +85,8 @@
     <button onclick="changeToBas()">bass drop</button>
     <button onclick="changeToOmaga()">omaga</button>
     <button onclick="changeToBell()">taco bel</button>
+    <button onclick="changeToSus()">the sus</button>
+    <button onclick="changeToAAAA()">a</button>
     <img onclick="fartr()" src="../assets/thebutton/fartpush.png">
     <h1 id="text">you selected reverb fard</h1>
     <audio id="fart" src="../assets/thebutton/fard.mp3"></audio>
