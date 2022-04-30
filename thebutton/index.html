@@ -73,8 +73,13 @@
         }
         function changeToAAAA() {
             var sound = document.getElementById('fart');
-            document.getElementById('text').innerHTML = 'you selected a';
+            document.getElementById('text').innerHTML = 'you selected aaaaaaaaaaa';
             sound.src = '/assets/thebutton/a.mp3'
+        }
+        function changeToAugh() {
+            var sound = document.getElementById('fart');
+            document.getElementById('text').innerHTML = 'you selected augh';
+            sound.src = '/assets/thebutton/augh.mp3'
         }
     </script>
 </head>
@@ -86,7 +91,8 @@
     <button onclick="changeToOmaga()">omaga</button>
     <button onclick="changeToBell()">taco bel</button>
     <button onclick="changeToSus()">the sus</button>
-    <button onclick="changeToAAAA()">a</button>
+    <button onclick="changeToAAAA()">aaaaaaaaaaa</button>
+    <button onclick="changeToAugh()">augh</button>
     <img onclick="fartr()" src="../assets/thebutton/fartpush.png">
     <h1 id="text">you selected reverb fard</h1>
     <audio id="fart" src="../assets/thebutton/fard.mp3"></audio>
