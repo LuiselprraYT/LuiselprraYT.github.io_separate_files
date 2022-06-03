@@ -1,0 +1,17 @@
+body {
+    background-color: #1a1a1a;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    font-size: 4em;
+    background-color: #FFFFFF;
+    color: #00FF00;
+    text-align: center;
+}
+button {
+    font-size: 5em;
+}

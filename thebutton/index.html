@@ -3,85 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/thebutton.css">
     <title>the button</title>
-    <style>
-        body {
-            background-color: #1a1a1a;
-        }
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        h1 {
-            font-size: 4em;
-            background-color: #FFFFFF;
-            color: #00FF00;
-            text-align: center;
-        }
-        button {
-            font-size: 5em;
-        }
-    </style>
-    <script>
-        function pushP(event) {
-            var code = event.keyCode;
-            if (code == 32) {
-                fartr();
-            }
-        }
-        function fartr() {
-            var sound =  document.getElementById('fart');
-            var fard = sound.cloneNode();
-
-            fard.play();
-        }
-        function changeToBoom() {
-            var sound = document.getElementById('fart');
-            document.getElementById('text').innerHTML = 'you selected vine boom';
-            sound.src = '/assets/thebutton/bom.mp3'
-        }
-        function changeToFart() {
-            var sound = document.getElementById('fart');
-            document.getElementById('text').innerHTML = 'you selected reverb fard';
-            sound.src = '/assets/thebutton/fard.mp3'
-        }
-        function changeToBruh() {
-            var sound = document.getElementById('fart');
-            document.getElementById('text').innerHTML = 'you selected the bruh';
-            sound.src = '/assets/thebutton/bruh.mp3'
-        }
-        function changeToBas() {
-            var sound = document.getElementById('fart');
-            document.getElementById('text').innerHTML = 'you selected bass drop';
-            sound.src = '/assets/thebutton/bas.mp3'
-        }
-        function changeToOmaga() {
-            var sound = document.getElementById('fart');
-            document.getElementById('text').innerHTML = 'you selected omaga';
-            sound.src = '/assets/thebutton/omaga.mp3'
-        }
-        function changeToBell() {
-            var sound = document.getElementById('fart');
-            document.getElementById('text').innerHTML = 'you selected taco bel';
-            sound.src = '/assets/thebutton/bong.mp3'
-        }
-        function changeToSus() {
-            var sound = document.getElementById('fart');
-            document.getElementById('text').innerHTML = 'you selected the sus';
-            sound.src = '/assets/thebutton/amogos.mp3'
-        }
-        function changeToAAAA() {
-            var sound = document.getElementById('fart');
-            document.getElementById('text').innerHTML = 'you selected aaaaaaaaaaa';
-            sound.src = '/assets/thebutton/a.mp3'
-        }
-        function changeToAugh() {
-            var sound = document.getElementById('fart');
-            document.getElementById('text').innerHTML = 'you selected augh';
-            sound.src = '/assets/thebutton/augh.mp3'
-        }
-    </script>
+    <script src="/scripts/thebutton.js"></script>
 </head>
 <body onkeydown="pushP(event)">
     <button onclick="changeToBoom()">vine boom</button>
@@ -93,6 +17,11 @@
     <button onclick="changeToSus()">the sus</button>
     <button onclick="changeToAAAA()">aaaaaaaaaaa</button>
     <button onclick="changeToAugh()">augh</button>
+    <button onclick="changeToJijijija()">jijijija</button>
+    <button onclick="changeToSansum()">sansum</button>
+    <button onclick="changeToDog()">what the dog doin?</button>
+    <button onclick="changeToGoku()">goku</button>
+    <button onclick="changeToTueniguan()">tueniguan</button>
     <img onclick="fartr()" src="../assets/thebutton/fartpush.png">
     <h1 id="text">you selected reverb fard</h1>
     <audio id="fart" src="../assets/thebutton/fard.mp3"></audio>
