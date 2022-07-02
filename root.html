@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="7; url=home.html">
+    <style>
+        /* the extras */
+
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+        /* the keyframes */
+
+        @keyframes bc-color-change {
+            from {
+                background-color: black;
+            }
+            to {
+                background-color: #8391a1;
+            }
+        }
+        @keyframes txt-color-change {
+            from {
+                color: black;
+            }
+            to {
+                color: #8391a1;
+            }
+        }
+        @keyframes text-grow {
+            from {
+                font-size: 0px;
+            }
+            to {
+                font-size: 5em;
+            }
+        }
+        @keyframes link-appear {
+            0% {
+                opacity: 0;
+            }
+            25% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            75% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        /* the styles */
+
+        body {
+            animation: bc-color-change 2s;
+            background-color: #8391a1;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .the-div {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .the-div h1 {
+            animation: text-grow 2s;
+            font-size: 5em;
+        }
+        .the-div h3 {
+            animation: txt-color-change 2s, link-appear infinite ease 2s;
+        }
+        .the-since {
+            position: absolute;
+            right: 5px;
+            bottom: 0;
+        }
+        .the-since::before {
+            content: 'jk idk what to put in here welp';
+            font-size: 0.5em;
+            color: #8391a1;
+            text-decoration: none;
+        }
+    </style>
+    <title>Welcome!</title>
+</head>
+<body>
+    <div class="the-div">
+        <h1>LuiselprraYT</h1>
+        <h3>Loadin'...</h3>
+    </div>
+    <p class="the-since">All Rights Reserved</p>
+</body>
+</html>
