@@ -80,3 +80,8 @@ function changeToTueniguan() {
     document.getElementById('text').innerHTML = 'you selected tueniguan';
     sound.src = '/assets/thebutton/tueniguan.mp3'
 }
+function changeToOof() {
+    var sound = document.getElementById('fart');
+    document.getElementById('text').innerHTML = 'you selected oof';
+    sound.src = '/assets/thebutton/oof.mp3'
+}
