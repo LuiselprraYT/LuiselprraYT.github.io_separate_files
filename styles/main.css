@@ -45,7 +45,6 @@ body::-webkit-scrollbar-thumb {
     text-decoration: none;
     color: black;
     font-family: 'Quicksand', sans-serif;
-    position: sticky;
     transition: 0.25s;
 }
 
